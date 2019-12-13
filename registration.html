@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo List - Rejestracja</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="login.html">Logowanie</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>To-Do List</h1>
+            <h2>Rejestracja</h2>
+            <form action="/rejestracja" method="POST">
+                <input type="text" name="registerLogin" id="registerText" placeholder="Twój login">
+                <input type="password" name="registerPassword" id="passwordRegisterText" placeholder="Twoje hasło">
+                <input type="email" name="registerEmail" id="emailRegisterText" placeholder="Twój adres email">
+                <button type="submit" id="registerButton">Zarejestruj się!</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
