@@ -1,0 +1,28 @@
+{
+  "name": "CodersCamp-Project4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akominiak/CodersCamp-Project4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akominiak/CodersCamp-Project4/issues"
+  },
+  "homepage": "https://github.com/akominiak/CodersCamp-Project4#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "joi": "^14.3.1",
+    "mongoose": "^5.8.1",
+    "path": "^0.12.7"
+  }
+}
