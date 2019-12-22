@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    padding: 100px 0;
+}
+
+.container {
+    text-align: center;
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    color: #666;
+}
+
+.container h1 {
+    font-size: 48px;
+}
+
+.container h2 {
+    font-size: 26px;
+    margin: 6px 0 12px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form>* {
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+.container form input {
+    padding: 4px 8px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid burlywood;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.container form button {
+    width: 180px;
+    margin: 60px auto;
+    padding: 12px 24px;
+    background-color: burlywood;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*ToDo List style*/
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 0 20px;
+    border-right: 1px solid #666;
+}
+
+nav ul li:last-of-type {
+    border: none;
+}
+
+nav ul li a {
+    color: burlywood;
+    text-decoration: none;
+}
+
+main .list ul {
+    list-style: none;
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+main .list ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 10px;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    background-color: burlywood;
+    color: white;
+}
+
+main .list ul li button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+main .list ul p {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container form.addTask .inputWrap {
+    border-bottom: 2px solid burlywood;
+    margin-bottom: 40px;
+}
+
+.container form.addTask {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.container form.addTask>* {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.container form.addTask input {
+    padding: 4px 8px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 350px;
+}
+
+.container form.addTask button {
+    width: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    color: #666;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: right;
+}
+
+button.delete {
+    position: relative;
+    top: 1px;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    margin: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-top {
+    background-color: rgb(221, 156, 70);
+    color: white;
+    padding: 7px;
+}
+
+.modal h2 {
+    padding: 7px;
+}
+.modal input{
+    padding: 7px;
+    margin-left: 25px;
+    margin-bottom:30px;
+    margin-top: 0px;
+    border-radius: 6%;
+    border: 1px solid rgb(59, 59, 59);
+}
+
+.modal h5 {
+    padding: 25px;
+}
+
+.btn-ok{
+    border: 1px solid rgb(59, 59, 59);
+    background-color: white;
+    border-radius: 6%;
+    transition-duration: .5s;
+    padding: 5px;
+    float: right;
+    margin-right: 30px;
+}
+
+.btn-ok:hover{
+    background-color: rgb(221, 156, 70);
+    color: white;
+    transition-duration: .5s;
+}
