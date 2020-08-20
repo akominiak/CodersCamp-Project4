@@ -20,7 +20,7 @@
   "homepage": "https://github.com/akominiak/CodersCamp-Project4#readme",
   "dependencies": {
     "axios": "^0.19.0",
-    "bcrypt": "^3.0.7",
+    "bcrypt": "^5.0.0",
     "compression": "^1.7.4",
     "config": "^3.2.4",
     "express": "^4.17.1",
