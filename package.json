@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/akominiak/CodersCamp-Project4#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bcrypt": "^3.0.7",
     "compression": "^1.7.4",
     "config": "^3.2.4",
